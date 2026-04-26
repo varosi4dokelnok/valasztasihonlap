@@ -1,0 +1,267 @@
+* {
+    margin: 0;
+}
+/*DARKMODE STYLES*/
+/* LIGHT MODE – ez a világos téma változókészlete */
+body.light {
+  --header-bg: rgb(130, 0, 130);
+  --btn-bg: rgb(0, 64, 0);
+  --main-bg: bisque;
+  --main-text: rgb(36, 36, 36);
+  --footer-bg: rgb(130, 0, 130);
+}
+
+/* DARK MODE – ez a sötét téma változókészlete */
+body.dark {
+  --header-bg: rgb(0, 64, 0);
+  --btn-bg: rgb(130, 0, 130);
+  --main-bg: rgb(36, 36, 36);
+  --main-text: bisque;
+  --footer-bg: rgb(0, 64, 0);
+}
+
+html {
+    font-size: 1rem;
+    width: 100%;
+    
+}
+
+body {
+    width: 100%;
+    font-size: 1.5rem;
+    background-color: var(--main-bg);
+}
+
+.container {   
+    height: 100dvh;
+    background-color: var(--main-bg);
+    display: flex;
+    flex-direction: column;
+}
+header {
+    max-width: 100%;
+    padding: 1rem;
+    height: fit-content;
+    background-color: var(--header-bg);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: bisque;
+}
+.focim {
+    flex: 1;
+    font-size: 2rem;
+    text-align: center;
+}
+.menugomb {
+    height: 3vh;
+    display: none;
+    align-items: center;
+}
+.menugomb svg {
+    height: 100%;
+    stroke-color: bisque;
+}
+.menucim {
+    display: none;
+}
+.pc-menu {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+}
+.menupontok {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    flex:1;
+    font-size: 1.5rem;
+}
+.menupontok ul {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.menupontok ul li {
+    list-style: none;
+    text-decoration: none;
+}
+.menupontok ul a {
+    text-decoration: none;
+    color: bisque;
+}
+#darkmode-btn {
+    cursor: pointer;
+    border: none;
+    background-color: var(--btn-bg);
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    border-radius: 1rem;
+    color: bisque;
+}
+
+.telefon-menu {
+    display: none;
+}
+
+main {
+    flex: 1;
+}
+.nev {
+    color: var(--main-text);
+    margin-left: 5dvw;
+    padding-top: 1rem;
+    width: fit-content;
+    border-bottom: 2px solid var(--main-text);
+}
+.szoveg, .alcim {
+    width: 90%;
+    margin-left: 5%;
+    background-color: var(--main-bg);
+    color: var(--main-text);
+}
+.alcim {
+    width: fit-content;
+    border-bottom: 2px solid var(--main-text);
+    padding-top: 1rem;
+}
+.szoveg {
+    padding-bottom: 1rem;
+}
+.nev, .kapcsolat-nev {
+    padding: 0;
+    padding-top: 1rem;
+}
+.sections ul{
+    padding-left: 10dvw;
+}
+.sections section ul li {
+    color: var(--main-text);
+}
+
+footer {
+    margin-top: auto;
+    color: bisque;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+    background-color: var(--footer-bg);
+}
+
+
+@media (max-width: 768px) {
+
+    /* Globális betűméret */
+    body {
+        font-size: 1.2rem;
+    }
+
+    /* HEADER */
+    header {
+        padding: 0.5rem 1rem;
+        justify-content: space-between;
+    }
+
+    .focim {
+        font-size: 1.5rem;
+        text-align: left;
+    }
+
+    /* Menü átváltása mobilra */
+    .pc-menu {
+        display: none;
+    }
+
+    #telefon-menu {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        padding: 1rem;
+        background-color: var(--header-bg);
+    }
+    #telefon-darkmode-btn {
+        cursor: pointer;
+        border: none;
+        background-color: var(--btn-bg);
+        font-size: 1.5rem;
+        padding: 0.5rem;
+        border-radius: 1rem;
+        color: bisque;
+    }
+    #telefon-menugomb {
+        display: flex;
+        height: 2.5rem;
+        align-items: center;
+        margin-right: 1rem;
+    }
+
+    /* Menü elemek mobilon */
+    .menupontok ul {
+        flex-direction: column;
+        gap: 1rem;
+        padding: 0;
+    }
+
+    .menupontok {
+        flex-direction: column;
+        gap: 1rem;
+        font-size: 1.3rem;
+    }
+
+    /* Darkmode gomb mobilon */
+    #darkmode-btn {
+        font-size: 1.2rem;
+        padding: 0.4rem 0.8rem;
+        align-self: flex-start;
+    }
+
+    /* MAIN – tartalom igazítása */
+    main {
+        padding: 1rem 0;
+    }
+
+    /* Kapcsolat oldal: a két section egymás alá kerül */
+    .sections {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .sections section {
+        width: 100%;
+    }
+
+    .sections ul {
+        padding-left: 2rem;
+    }
+
+    /* Szövegek mobilon */
+    .nev {
+        margin-left: 1rem;
+        font-size: 1.3rem;
+    }
+
+    .alcim {
+        margin-left: 1rem;
+        font-size: 1.2rem;
+    }
+
+    .szoveg {
+        width: 90%;
+        margin-left: 5%;
+        font-size: 1.1rem;
+        padding-top: 1rem;
+    }
+
+    /* FOOTER */
+    footer {
+        font-size: 1.2rem;
+        padding: 0.8rem;
+        text-align: center;
+    }
+}

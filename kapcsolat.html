@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Kezdőlap</title>
+</head>
+<body>
+
+    <div class="container" id="main">
+        <header id="header">
+            <div class="focim">Kapcsolat</div>
+            <div class="menugomb" id="telefon-menugomb">
+                <svg class="hamburger-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <g stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none">
+                        <line x1="5" y1="7" x2="19" y2="7"></line>
+                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                        <line x1="5" y1="17" x2="19" y2="17"></line>
+                    </g>
+                </svg>
+
+            </div>
+            <menu class="pc-menu">
+                <div class="menucim">Menü</div>
+                <div class="menupontok">
+                    <ul>
+                        <a href="index.html"><li>Kezdőlap</li></a>
+                        <a href="program.html"><li>Program</li></a>
+                    </ul>
+                    
+                </div>
+                <darkmode>
+                    <input id="darkmode-btn"  type="button" value="Sötét mód" onclick="darkmode()">
+                </darkmode>
+            </menu>
+        </header>
+        <menu class="telefon-menu" id="telefon-menu">
+            <div class="menucim">Menü</div>
+            <div class="menupontok">
+                <ul>
+                    <a href="index.html"><li>Kezdőlap</li></a>
+                    <a href="program.html"><li>Program</li></a>
+                </ul>
+            </div>
+            <darkmode>
+                <input id="telefon-darkmode-btn"  type="button" value="Sötét mód" onclick="darkmode()">
+            </darkmode>
+        </menu>
+        <main class="sections">
+            <section class="varosi">
+                <p class="nev kapcsolat-nev">Városi Áron Tamás</p>
+                <ul>
+                    <li>Insta</li>
+                    <li>Facebook</li>
+                    <li>E-mail</li>
+                    <li>Terem</li>
+                </ul>
+            </section>
+            <section class="vargha">
+                <p class="nev kapcsolat-nev">Vargha Zsombor</p>
+                <ul>
+                    <li>Insta</li>
+                    <li>Facebook</li>
+                    <li>E-mail</li>
+                    <li>Terem</li>
+                </ul>
+            </section>
+        </main>
+        <footer id="footer">
+            Okosan, biztosan, értetek.
+        </footer>
+    </div>
+    
+    <script src="js/main.js"></script>
+</body>
+</html>
