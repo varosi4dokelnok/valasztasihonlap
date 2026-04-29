@@ -4,20 +4,20 @@
 /*DARKMODE STYLES*/
 /* LIGHT MODE – ez a világos téma változókészlete */
 body.light {
-  --header-bg: rgb(130, 0, 130);
-  --btn-bg: rgb(0, 64, 0);
+  --header-bg: rgb(85, 30, 78);
+  --btn-bg: rgb(26, 150, 69);
   --main-bg: bisque;
   --main-text: rgb(36, 36, 36);
-  --footer-bg: rgb(130, 0, 130);
+  --footer-bg: rgb(85, 30, 78);
 }
 
 /* DARK MODE – ez a sötét téma változókészlete */
 body.dark {
-  --header-bg: rgb(0, 64, 0);
-  --btn-bg: rgb(130, 0, 130);
+  --header-bg: rgb(26, 150, 69);
+  --btn-bg: rgb(85, 30, 78);
   --main-bg: rgb(36, 36, 36);
   --main-text: bisque;
-  --footer-bg: rgb(0, 64, 0);
+  --footer-bg: rgb(26, 150, 69);
 }
 
 html {
