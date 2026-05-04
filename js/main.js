@@ -5,8 +5,8 @@ if (savedTheme === "dark") {
     document.getElementById("telefon-darkmode-btn").value = "Világos mód";
 } else {
     document.body.classList.add("light");
-    document.getElementById("darkmode-btn").value = "Világos mód";
-    document.getElementById("telefon-darkmode-btn").value = "Világos mód";
+    document.getElementById("darkmode-btn").value = "Sötét mód";
+    document.getElementById("telefon-darkmode-btn").value = "Sötét mód";
 }
 
 // Váltás
