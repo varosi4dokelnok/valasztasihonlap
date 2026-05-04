@@ -1,7 +1,7 @@
 // Téma betöltése
 let savedTheme = localStorage.getItem("theme");
 let savedText = localStorage.getItem("btn-txt");
-
+ 
 // Ha nincs mentve semmi, alapértelmezés:
 if (!savedTheme) {
     savedTheme = "light";
