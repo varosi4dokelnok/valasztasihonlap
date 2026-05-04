@@ -1,46 +1,47 @@
-const savedTheme = localStorage.getItem("theme");
-const buttonText = localStorage.getItem("btn-txt");
-if (savedTheme === "dark") {
-    document.body.classList.add("dark");
-    localStorage.setItem("btn-txt", "Világos mód");
-} else {
-    document.body.classList.add("light");
+// Téma betöltése
+let savedTheme = localStorage.getItem("theme");
+let savedText = localStorage.getItem("btn-txt");
+
+// Ha nincs mentve semmi, alapértelmezés:
+if (!savedTheme) {
+    savedTheme = "light";
+    savedText = "Sötét mód";
+    localStorage.setItem("theme", "light");
     localStorage.setItem("btn-txt", "Sötét mód");
 }
 
-// Inicializálás
-document.getElementById("darkmode-btn").value = buttonText;
-document.getElementById("telefon-darkmode-btn").value = buttonText;
+// Téma alkalmazása
+document.body.classList.add(savedTheme);
 
-// Váltás
-document.getElementById("darkmode-btn").addEventListener("click", () => {
+// Gombok inicializálása
+document.getElementById("darkmode-btn").value = savedText;
+document.getElementById("telefon-darkmode-btn").value = savedText;
+
+// Téma váltó függvény (mindkét gomb ezt hívja)
+function toggleTheme() {
     if (document.body.classList.contains("dark")) {
         document.body.classList.replace("dark", "light");
         localStorage.setItem("theme", "light");
+        localStorage.setItem("btn-txt", "Sötét mód");
+
         document.getElementById("darkmode-btn").value = "Sötét mód";
-    } else {
-        document.body.classList.replace("light", "dark");
-        localStorage.setItem("theme", "dark");
-        document.getElementById("darkmode-btn").value = "Világos mód";
-    }
-});
-
-document.getElementById("telefon-darkmode-btn").addEventListener("click", () => {
-    if (document.body.classList.contains("dark")) {
-        document.body.classList.replace("dark", "light");
-        localStorage.setItem("theme", "light");
         document.getElementById("telefon-darkmode-btn").value = "Sötét mód";
     } else {
         document.body.classList.replace("light", "dark");
         localStorage.setItem("theme", "dark");
+        localStorage.setItem("btn-txt", "Világos mód");
+
+        document.getElementById("darkmode-btn").value = "Világos mód";
         document.getElementById("telefon-darkmode-btn").value = "Világos mód";
     }
-});
+}
 
+// Mindkét gomb ugyanazt a függvényt használja
+document.getElementById("darkmode-btn").addEventListener("click", toggleTheme);
+document.getElementById("telefon-darkmode-btn").addEventListener("click", toggleTheme);
+
+// Telefonos menü
 document.getElementById("telefon-menugomb").addEventListener("click", () => {
-    if (document.getElementById("telefon-menu").style.display === "flex") {
-        document.getElementById("telefon-menu").style.display = "none";
-    } else {
-        document.getElementById("telefon-menu").style.display = "flex";
-    }
+    const menu = document.getElementById("telefon-menu");
+    menu.style.display = (menu.style.display === "flex") ? "none" : "flex";
 });
