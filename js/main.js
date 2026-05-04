@@ -1,13 +1,16 @@
 const savedTheme = localStorage.getItem("theme");
+const buttonText = localStorage.getItem("btn-txt");
 if (savedTheme === "dark") {
     document.body.classList.add("dark");
-    document.getElementById("darkmode-btn").value = "Világos mód";
-    document.getElementById("telefon-darkmode-btn").value = "Világos mód";
+    localStorage.setItem("buttonText", "Világos mód);
 } else {
     document.body.classList.add("light");
-    document.getElementById("darkmode-btn").value = "Sötét mód";
-    document.getElementById("telefon-darkmode-btn").value = "Sötét mód";
+    localStorage.setItem("buttonText", "Sötét mód);
 }
+
+// Inicializálás
+document.getElementById("darkmode-btn").value = buttonText;
+document.getElementById("telefon-darkmode-btn").value = buttonText;
 
 // Váltás
 document.getElementById("darkmode-btn").addEventListener("click", () => {
