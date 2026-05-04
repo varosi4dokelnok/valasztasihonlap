@@ -12,7 +12,7 @@ document.getElementById("darkmode-btn").addEventListener("click", () => {
         document.body.classList.replace("dark", "light");
         localStorage.setItem("theme", "light");
         document.getElementById("darkmode-btn").value = "Sötét mód";
-    } else 
+    } else {
         document.body.classList.replace("light", "dark");
         localStorage.setItem("theme", "dark");
         document.getElementById("darkmode-btn").value = "Világos mód";
