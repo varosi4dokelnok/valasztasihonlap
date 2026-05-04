@@ -8,6 +8,10 @@ if (!savedTheme) {
     savedText = "Sötét mód";
     localStorage.setItem("theme", "light");
     localStorage.setItem("btn-txt", "Sötét mód");
+} else if (savedTheme == "dark") {
+    savedText = "Világos mód";
+} else {
+    savedText = "Sötét mód";
 }
 
 // Téma alkalmazása
