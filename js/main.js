@@ -1,8 +1,6 @@
-// Téma betöltése
 let savedTheme = localStorage.getItem("theme");
 let savedText = localStorage.getItem("btn-txt");
 
-// Ha nincs mentve semmi, alapértelmezés:
 if (!savedTheme) {
     savedTheme = "light";
     savedText = "Sötét mód";
@@ -10,14 +8,11 @@ if (!savedTheme) {
     localStorage.setItem("btn-txt", "Sötét mód");
 }
 
-// Téma alkalmazása
 document.body.classList.add(savedTheme);
 
-// Gombok inicializálása
 document.getElementById("darkmode-btn").value = savedText;
 document.getElementById("telefon-darkmode-btn").value = savedText;
 
-// Téma váltó függvény (mindkét gomb ezt hívja)
 function toggleTheme() {
     if (document.body.classList.contains("dark")) {
         document.body.classList.replace("dark", "light");
@@ -27,7 +22,7 @@ function toggleTheme() {
         document.getElementById("darkmode-btn").value = "Sötét mód";
         document.getElementById("telefon-darkmode-btn").value = "Sötét mód";
     } else {
-        document.body.classList.replace("light", "dark");
+        document.body.classList.replace("light", "dark);
         localStorage.setItem("theme", "dark");
         localStorage.setItem("btn-txt", "Világos mód");
 
@@ -36,12 +31,10 @@ function toggleTheme() {
     }
 }
 
-// Mindkét gomb ugyanazt a függvényt használja
 document.getElementById("darkmode-btn").addEventListener("click", toggleTheme);
 document.getElementById("telefon-darkmode-btn").addEventListener("click", toggleTheme);
 
-// Telefonos menü
-document.getElementById("telefon-menugomb").addEventListener("click", () => {
+document.getElementById("telefon-menugomb").addEventListener("click",  () => {
     const menu = document.getElementById("telefon-menu");
     menu.style.display = (menu.style.display === "flex") ? "none" : "flex";
 });
