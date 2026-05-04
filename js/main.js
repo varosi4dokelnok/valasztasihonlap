@@ -2,10 +2,10 @@ const savedTheme = localStorage.getItem("theme");
 const buttonText = localStorage.getItem("btn-txt");
 if (savedTheme === "dark") {
     document.body.classList.add("dark");
-    localStorage.setItem("buttonText", "Világos mód);
+    localStorage.setItem("btn-txt", "Világos mód);
 } else {
     document.body.classList.add("light");
-    localStorage.setItem("buttonText", "Sötét mód);
+    localStorage.setItem("btn-txt", "Sötét mód);
 }
 
 // Inicializálás
