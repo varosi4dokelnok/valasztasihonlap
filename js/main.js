@@ -12,7 +12,7 @@ document.getElementById("darkmode-btn").addEventListener("click", () => {
         localStorage.setItem("theme", "light");
         document.getElementById("darkmode-btn").value = "Sötét mód";
     } else {
-        if (document.body.classList.contains("light") {
+        if (document.body.classList.contains("light")) {
             document.body.classList.replace("light", "dark");
         } else {
             document.body.classList.add("dark");
