@@ -1,8 +1,12 @@
 const savedTheme = localStorage.getItem("theme");
 if (savedTheme === "dark") {
-document.body.classList.add("dark");
+    document.body.classList.add("dark");
+    document.getElementById("darkmode-btn").value = "Világos mód";
+    document.getElementById("telefon-darkmode-btn").value = "Világos mód";
 } else {
-document.body.classList.add("light");
+    document.body.classList.add("light");
+    document.getElementById("darkmode-btn").value = "Világos mód";
+    document.getElementById("telefon-darkmode-btn").value = "Világos mód";
 }
 
 // Váltás
