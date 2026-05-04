@@ -1,9 +1,8 @@
 const savedTheme = localStorage.getItem("theme");
-alert(savedTheme);
 if (savedTheme === "dark") {
-    document.body.classList.add("dark");
+document.body.classList.add("dark");
 } else {
-    document.body.classList.add("light");
+document.body.classList.add("light");
 }
 
 // Váltás
