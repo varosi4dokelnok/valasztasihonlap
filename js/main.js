@@ -1,8 +1,9 @@
 const savedTheme = localStorage.getItem("theme");
+alert(savedTheme);
 if (savedTheme === "dark") {
-document.body.classList.add("dark");
+    document.body.classList.add("dark");
 } else {
-document.body.classList.add("light");
+    document.body.classList.add("light");
 }
 
 // Váltás
@@ -12,11 +13,7 @@ document.getElementById("darkmode-btn").addEventListener("click", () => {
         localStorage.setItem("theme", "light");
         document.getElementById("darkmode-btn").value = "Sötét mód";
     } else {
-        if (document.body.classList.contains("light")) {
-            document.body.classList.replace("light", "dark");
-        } else {
-            document.body.classList.add("dark");
-        }
+        document.body.classList.replace("light", "dark");
         localStorage.setItem("theme", "dark");
         document.getElementById("darkmode-btn").value = "Világos mód";
     }
