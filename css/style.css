@@ -6,8 +6,8 @@
 body.light {
   --header-bg: rgb(85, 30, 78);
   --btn-bg: rgb(26, 150, 69);
-  --main-bg: rgb(236, 253, 245);
-  --main-text: rgb(107, 115, 128);
+  --main-bg: rgb(251, 255, 254);
+  --main-text: rgb(57, 65, 78);
   --footer-bg: rgb(85, 30, 78);
 }
 
@@ -15,8 +15,8 @@ body.light {
 body.dark {
   --header-bg: rgb(26, 150, 69);
   --btn-bg: rgb(85, 30, 78);
-  --main-bg: rgb(107, 115, 128);
-  --main-text: rgb(236, 253, 245);
+  --main-bg: rgb(57, 65, 78);
+  --main-text: rgb(251, 255, 254);
   --footer-bg: rgb(26, 150, 69);
 }
 
