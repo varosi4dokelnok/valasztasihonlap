@@ -6,16 +6,16 @@ let savedText = localStorage.getItem("btn-txt");
 
 // Ha nincs mentve semmi, alapértelmezés:
 if (!savedTheme) {
-    console.log("eredeti téma: nincs");
+    //console.log("eredeti téma: nincs");
     savedTheme = "light";
     savedText = "Sötét mód";
     localStorage.setItem("theme", "light");
     localStorage.setItem("btn-txt", "Sötét mód");
 } else if (savedTheme == "dark") {
-    console.log("eredeti téma: sötét");
+    //console.log("eredeti téma: sötét");
     savedText = "Világos mód";
 } else {
-    console.log("eredeti téma: világos");
+    //console.log("eredeti téma: világos");
     savedText = "Sötét mód";
 }
 
