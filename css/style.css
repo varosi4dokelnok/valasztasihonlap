@@ -4,8 +4,8 @@
 /*DARKMODE STYLES*/
 /* LIGHT MODE – ez a világos téma változókészlete */
 body.light {
-  --header-bg: rgb(85, 28, 79);
-  --btn-bg: rgb(22, 151, 68);
+  --header-bg: rgb(22, 151, 68);
+  --btn-bg: rgb(85, 28, 79);
   --main-bg: rgb(253, 255, 254);
   --main-text: rgb(26, 29, 36);
   --footer-bg: rgb(85, 28, 79);
@@ -13,8 +13,8 @@ body.light {
 
 /* DARK MODE – ez a sötét téma változókészlete */
 body.dark {
-  --header-bg: rgb(22, 151, 68);
-  --btn-bg: rgb(85, 28, 79);
+  --header-bg: rgb(85, 28, 79);
+  --btn-bg: rgb(22, 151, 68);
   --main-bg: rgb(26, 29, 36);
   --main-text: rgb(253, 255, 254);
   --footer-bg: rgb(22, 151, 68);
