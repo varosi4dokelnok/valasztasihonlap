@@ -106,6 +106,15 @@ header {
     display: none;
 }
 
+.szlogen {
+    width: 100%;
+    height: fit-content;
+    padding-top: 2dvh;
+    padding-bottom: 2dvh;
+    text-align: center;
+    background-color: var(--header-bg);
+    color: rgb(251, 255, 254);
+}
 main {
     flex: 1;
 }
