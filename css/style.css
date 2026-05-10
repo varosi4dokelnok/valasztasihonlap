@@ -114,6 +114,7 @@ header {
     text-align: center;
     background-color: var(--header-bg);
     color: rgb(251, 255, 254);
+    border-top: 1dvh solid rgb(251, 255, 254);
 }
 main {
     flex: 1;
