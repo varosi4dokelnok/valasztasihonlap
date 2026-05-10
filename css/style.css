@@ -4,8 +4,8 @@
 /*DARKMODE STYLES*/
 /* LIGHT MODE – ez a világos téma változókészlete */
 body.light {
-  --header-bg: rgb(22, 151, 68);
-  --btn-bg: rgb(85, 28, 79);
+  --header-bg: rgb(85, 28, 79);
+  --btn-bg: rgb(22, 151, 68);
   --main-bg: rgb(253, 255, 254);
   --main-text: rgb(26, 29, 36);
   --footer-bg: rgb(85, 28, 79);
@@ -112,7 +112,7 @@ header {
     padding-top: 2dvh;
     padding-bottom: 2dvh;
     text-align: center;
-    background-color: var(--header-bg);
+    background-color: var(--btn-bg);
     color: rgb(253, 255, 254);
     border-top: 2px solid rgb(253, 255, 254);
 }
