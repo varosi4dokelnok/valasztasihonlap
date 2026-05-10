@@ -159,7 +159,7 @@ footer {
     justify-content: center;
     align-items: center;
     height: fit-content;
-    background-color: var(--footer-bg);
+    background-color: var(--btn-bg);
 }
 
 
