@@ -1,3 +1,5 @@
+console.log("Ezt a honlapot Városi Áron Tamás megsegítésére Sepsei Barnabás alkotta meg. Minden egyes sor kód Sepsei Barnabás erkölcsi érdeme.");
+
 // Téma betöltése
 let savedTheme = localStorage.getItem("theme");
 let savedText = localStorage.getItem("btn-txt");
