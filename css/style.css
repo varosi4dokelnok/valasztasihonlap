@@ -125,6 +125,7 @@ main {
     padding-top: 1rem;
     width: fit-content;
     border-bottom: 2px solid var(--main-text);
+    margin-bottom: 1rem;
 }
 .szoveg, .alcim {
     width: 90%;
