@@ -38,10 +38,12 @@ function toggleTheme() {
         localStorage.setItem("btn-txt", "Sötét mód");
         localStorage.setItem("szigno", "block");
         savedSzigno = "block";
+        console.log(savedSzigno);
 
         document.getElementById("darkmode-btn").value = "Sötét mód";
         document.getElementById("telefon-darkmode-btn").value = "Sötét mód";
         document.querySelectorAll(".szigno-fekete").forEach(e => e.style.display = savedSzigno);
+        console.log(document.querySelector(".szigno-fekete").style.display);
         document.querySelectorAll(".szigno-feher").forEach(e => e.style.display = (savedSzigno == "block") ? "none" : "block");
     } else {
         document.body.classList.replace("light", "dark");
@@ -53,6 +55,7 @@ function toggleTheme() {
         document.getElementById("darkmode-btn").value = "Világos mód";
         document.getElementById("telefon-darkmode-btn").value = "Világos mód";
         document.querySelectorAll(".szigno-fekete").forEach(e => e.style.display = savedSzigno);
+        console.log(document.querySelector(".szigno-fekete").style.display);
         document.querySelectorAll(".szigno-feher").forEach(e => e.style.display = (savedSzigno == "block") ? "none" : "block");
     }
 }
