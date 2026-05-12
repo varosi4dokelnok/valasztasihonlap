@@ -51,6 +51,7 @@ function toggleTheme() {
         localStorage.setItem("btn-txt", "Világos mód");
         localStorage.setItem("szigno", "none");
         savedSzigno = "none"
+        console.log(savedSzigno);
 
         document.getElementById("darkmode-btn").value = "Világos mód";
         document.getElementById("telefon-darkmode-btn").value = "Világos mód";
