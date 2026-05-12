@@ -164,9 +164,11 @@ main {
 
 main .szoveg .szigno-fekete {
     display: var(--alairas-fekete);
+    width: 20dvh;
 }
 main .szoveg .szigno-feher {
     display: var(--alairas-feher);
+    width: 20dvh;
 }
 
 footer {
@@ -284,6 +286,13 @@ footer {
         margin-left: 5%;
         font-size: 1.1rem;
         padding-top: 1rem;
+    }
+
+    main .szoveg .szigno-fekete {
+        display: var(--alairas-fekete);
+    }
+    main .szoveg .szigno-feher {
+        display: var(--alairas-feher);
     }
 
     /* FOOTER */
