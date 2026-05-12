@@ -10,7 +10,7 @@ if (!savedTheme) {
 
     savedTheme = systemPrefersDark ? "dark" : "light";
     savedText = systemPrefersDark ? "Világos mód" : "Sötét mód";
-    savedSzigno = systemPrefersDark ? "none" : "block";
+    savedSzigno = systemPrefersDark ? "block" : "none";
 
     localStorage.setItem("theme", savedTheme);
     localStorage.setItem("btn-txt", savedText);
