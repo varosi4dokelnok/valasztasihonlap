@@ -163,11 +163,11 @@ main {
 }
 
 .szigno-fekete {
-    display: var(--alairas-fekete);
+    display: block;
     width: 30%;
 }
 .szigno-feher {
-    display: var(--alairas-feher);
+    display: block;
     width: 30%;
 }
 
