@@ -40,8 +40,8 @@ function toggleTheme() {
 
         document.getElementById("darkmode-btn").value = "Sötét mód";
         document.getElementById("telefon-darkmode-btn").value = "Sötét mód";
-        document.querySelectorAll(".szigno-fekete").forEach(e => e.style.display = "block");
-        document.querySelectorAll(".szigno-feher").forEach(e => e.style.display = "none");
+        document.querySelectorAll(".szigno-fekete").forEach(e => e.style.display = "none");
+        document.querySelectorAll(".szigno-feher").forEach(e => e.style.display = "block");
     } else {
         document.body.classList.replace("light", "dark");
         localStorage.setItem("theme", "dark");
@@ -50,8 +50,8 @@ function toggleTheme() {
 
         document.getElementById("darkmode-btn").value = "Világos mód";
         document.getElementById("telefon-darkmode-btn").value = "Világos mód";
-        document.querySelectorAll(".szigno-fekete").forEach(e => e.style.display = "none");
-        document.querySelectorAll(".szigno-feher").forEach(e => e.style.display = "block");
+        document.querySelectorAll(".szigno-fekete").forEach(e => e.style.display = "block");
+        document.querySelectorAll(".szigno-feher").forEach(e => e.style.display = "none");
     }
 }
 
