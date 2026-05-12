@@ -168,7 +168,12 @@ main {
 .szigno-feher {
     width: 30%;
 }
-
+#szigno-fekete {
+    display: block;
+}
+#szigno-feher {
+    display: none;
+}
 footer {
     margin-top: auto;
     color: rgb(251, 255, 254);
