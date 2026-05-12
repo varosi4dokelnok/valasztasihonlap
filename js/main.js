@@ -4,21 +4,20 @@ console.log("Ezt a honlapot Városi Áron Tamás megsegítésére Sepsei Barnab�
 let savedTheme = localStorage.getItem("theme");
 let savedText = localStorage.getItem("btn-txt");
 
-// Ha nincs mentve semmi, alapértelmezés:
 if (!savedTheme) {
-    //console.log("eredeti téma: nincs");
-    savedTheme = "light";
-    savedText = "Sötét mód";
-    localStorage.setItem("theme", "light");
-    localStorage.setItem("btn-txt", "Sötét mód");
-} else if (savedTheme == "dark") {
-    //console.log("eredeti téma: sötét");
+    const systemPrefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+
+    savedTheme = systemPrefersDark ? "dark" : "light";
+    savedText = systemPrefersDark ? "Világos mód" : "Sötét mód";
+
+    localStorage.setItem("theme", savedTheme);
+    localStorage.setItem("btn-txt", savedText);
+
+} else if (savedTheme === "dark") {
     savedText = "Világos mód";
 } else {
-    //console.log("eredeti téma: világos");
     savedText = "Sötét mód";
 }
-
 // Téma alkalmazása
 document.body.classList.add(savedTheme);
 
