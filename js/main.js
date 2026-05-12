@@ -27,8 +27,8 @@ document.body.classList.add(savedTheme);
 // Gombok inicializálása
 document.getElementById("darkmode-btn").value = savedText;
 document.getElementById("telefon-darkmode-btn").value = savedText;
-document.getElementById("szigno-fekete").style.display = savedSzigno;
-document.getElementById("szigno-feher").style.display = (savedSzigno == "block") ? "none" : "block";
+document.querySelectorAll(".szigno-fekete").forEach(e => e.style.display = savedSzigno);
+document.querySelectorAll(".szigno-feher").forEach(e => e.style.display = (savedSzigno == "none") ? "block" : "none");
 
 // Téma váltó függvény
 function toggleTheme() {
@@ -40,8 +40,8 @@ function toggleTheme() {
 
         document.getElementById("darkmode-btn").value = "Sötét mód";
         document.getElementById("telefon-darkmode-btn").value = "Sötét mód";
-        document.getElementById("szigno-fekete").style.display = "block";
-        document.getElementById("szigno-feher").style.display = "none";
+        document.querySelectorAll(".szigno-fekete").forEach(e => e.style.display = "none");
+        document.querySelectorAll(".szigno-feher").forEach(e => e.style.display = "block");
     } else {
         document.body.classList.replace("light", "dark");
         localStorage.setItem("theme", "dark");
@@ -50,8 +50,8 @@ function toggleTheme() {
 
         document.getElementById("darkmode-btn").value = "Világos mód";
         document.getElementById("telefon-darkmode-btn").value = "Világos mód";
-        document.getElementById("szigno-fekete").style.display = "block";
-        document.getElementById("szigno-feher").style.display = "none";
+        document.querySelectorAll(".szigno-fekete").forEach(e => e.style.display = "block");
+        document.querySelectorAll(".szigno-feher").forEach(e => e.style.display = "none");
     }
 }
 
