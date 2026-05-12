@@ -168,12 +168,6 @@ main {
 .szigno-feher {
     width: 30%;
 }
-#szigno-fekete {
-    display: block;
-}
-#szigno-feher {
-    display: none;
-}
 footer {
     margin-top: auto;
     color: rgb(251, 255, 254);
@@ -292,11 +286,9 @@ footer {
     }
 
     .szigno-fekete {
-        display: var(--alairas-fekete);
         width: 40dvw;
     }
     .szigno-feher {
-        display: var(--alairas-feher);
         width: 40dvw;
     }
 
