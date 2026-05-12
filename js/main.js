@@ -36,7 +36,7 @@ function toggleTheme() {
         document.body.classList.replace("dark", "light");
         localStorage.setItem("theme", "light");
         localStorage.setItem("btn-txt", "Sötét mód");
-        localStorage.setItem("szigno", "none");
+        localStorage.setItem("szigno", "block");
 
         document.getElementById("darkmode-btn").value = "Sötét mód";
         document.getElementById("telefon-darkmode-btn").value = "Sötét mód";
@@ -46,7 +46,7 @@ function toggleTheme() {
         document.body.classList.replace("light", "dark");
         localStorage.setItem("theme", "dark");
         localStorage.setItem("btn-txt", "Világos mód");
-        localStorage.setItem("szigno", "block");
+        localStorage.setItem("szigno", "none");
 
         document.getElementById("darkmode-btn").value = "Világos mód";
         document.getElementById("telefon-darkmode-btn").value = "Világos mód";
