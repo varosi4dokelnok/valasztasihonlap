@@ -164,11 +164,11 @@ main {
 
 .szigno-fekete {
     display: var(--alairas-fekete);
-    width: 30dvw;
+    width: 30%;
 }
 .szigno-feher {
     display: var(--alairas-feher);
-    width: 30dvw;
+    width: 30%;
 }
 
 footer {
