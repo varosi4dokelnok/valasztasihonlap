@@ -10,7 +10,7 @@ if (!savedTheme) {
 
     savedTheme = systemPrefersDark ? "dark" : "light";
     savedText = systemPrefersDark ? "Világos mód" : "Sötét mód";
-    savedSzigno = systemPrefersDark ? "block" : "none";
+    savedSzigno = systemPrefersDark ? "none" : "block";
 
     localStorage.setItem("theme", savedTheme);
     localStorage.setItem("btn-txt", savedText);
@@ -50,8 +50,8 @@ function toggleTheme() {
 
         document.getElementById("darkmode-btn").value = "Világos mód";
         document.getElementById("telefon-darkmode-btn").value = "Világos mód";
-        document.getElementById("szigno-fekete").style.display = "none";
-        document.getElementById("szigno-feher").style.display = "block";
+        document.getElementById("szigno-fekete").style.display = "block";
+        document.getElementById("szigno-feher").style.display = "none";
     }
 }
 
