@@ -162,6 +162,13 @@ main {
     color: var(--main-text);
 }
 
+main .szoveg .szigno-fekete {
+    display: var(--alairas-fekete);
+}
+main .szoveg .szigno-feher {
+    display: var(--alairas-feher);
+}
+
 footer {
     margin-top: auto;
     color: rgb(251, 255, 254);
