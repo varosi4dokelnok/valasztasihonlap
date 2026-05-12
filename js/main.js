@@ -18,8 +18,10 @@ if (!savedTheme) {
 
 } else if (savedTheme === "dark") {
     savedText = "Világos mód";
+    savedSzigno = "none";
 } else {
     savedText = "Sötét mód";
+    savedSzigno = "block";
 }
 // Téma alkalmazása
 document.body.classList.add(savedTheme);
