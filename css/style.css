@@ -151,6 +151,9 @@ main {
 .szoveg {
     padding-bottom: 1rem;
 }
+.szoveg-p1 {
+    padding-left: 5dvw;
+}
 .szoveg-p {
     padding-left: 10dvw;
 }
