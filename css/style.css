@@ -161,6 +161,7 @@ main {
 }
 h1 {
     font-weight: bold;
+    float: center;
     color: var(--main-text);
 }
 .szoveg {
