@@ -173,6 +173,9 @@ main {
     overflow-wrap: break-word;
     word-break: normal;
 }
+.programpont {
+    max-width: 90dvw;
+}
 .szoveg-p1 {
     padding-left: 5dvw;
     color: var(--main-text);
