@@ -12,7 +12,7 @@ body.light {
   --a-color: rgb(85, 28, 79);
   --alairas-fekete: block;
   --alairas-feher: none;
-  --link: rgb(31, 183, 85);
+  --link: rgb(120, 23, 127);
 }
 
 /* DARK MODE – ez a sötét téma változókészlete */
@@ -25,7 +25,7 @@ body.dark {
   --a-color: rgb(22, 151, 68);
   --alairas-fekete: none;
   --alairas-feher: block;
-  --link: rgb(120, 23, 127);
+  --link: rgb(31, 183, 85);
 }
 
 html {
