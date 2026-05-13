@@ -201,7 +201,11 @@ footer {
     background-color: var(--btn-bg);
     text-align: center;
 }
-
+p, li, div {
+    hyphens: auto;
+    overflow-wrap: break-word;
+    word-break: break-word;
+}
 
 @media (max-width: 768px) {
 
