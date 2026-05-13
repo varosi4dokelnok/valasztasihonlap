@@ -157,6 +157,11 @@ main {
     width: fit-content;
     border-bottom: 2px solid var(--main-text);
     padding-top: 1rem;
+    font-weight: bold;
+}
+h1 {
+    font-weight: bold;
+    color: var(--main-text);
 }
 .szoveg {
     padding-bottom: 1rem;
