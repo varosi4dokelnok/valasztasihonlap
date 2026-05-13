@@ -126,6 +126,7 @@ header {
 }
 main {
     flex: 1;
+    width: 90%;
     text-align: justify;
 }
 .nev {
