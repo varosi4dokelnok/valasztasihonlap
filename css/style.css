@@ -151,12 +151,15 @@ main {
 .szoveg {
     padding-bottom: 1rem;
     padding-left: 5dvw;
+    color: var(--main-text);
 }
 .szoveg-p1 {
     padding-left: 5dvw;
+    color: var(--main-text);
 }
 .szoveg-p {
     padding-left: 10dvw;
+    color: var(--main-text);
 }
 .szoveg-p li {
     margin-left: 5dvw;
