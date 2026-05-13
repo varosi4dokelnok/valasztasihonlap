@@ -246,6 +246,7 @@ h1 {
     font-weight: bold;
     color: var(--main-text);
     text-align: center !important;
+    float: center;
 }
 
 @media (max-width: 768px) {
