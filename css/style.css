@@ -151,6 +151,9 @@ main {
 .szoveg {
     padding-bottom: 1rem;
 }
+.szoveg p {
+    padding-left: 10dvw;
+}
 .nev, .kapcsolat-nev {
     padding: 0;
     padding-top: 1rem;
