@@ -369,7 +369,13 @@ h1 {
     .szigno-feher {
         width: 40dvw;
     }
-
+    .programpont ul {
+        display: block;
+        list-style-option: outside;
+    }
+    .programpont ul li {
+        list-style-type: disc;
+    }
     /* FOOTER */
     footer {
         font-size: 1.2rem;
