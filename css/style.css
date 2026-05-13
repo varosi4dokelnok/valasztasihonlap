@@ -127,7 +127,7 @@ header {
 }
 main {
     flex: 1;
-    max-width: 90dvw;
+    width: 100%;
     display: block;
     text-align: justify;
     white-space: normal;
