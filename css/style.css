@@ -159,11 +159,7 @@ main {
     padding-top: 1rem;
     font-weight: bold;
 }
-h1 {
-    font-weight: bold;
-    color: var(--main-text);
-    text-align: center !important;
-}
+
 .szoveg {
     padding-bottom: 1rem;
     padding-left: 5dvw;
@@ -241,6 +237,12 @@ footer {
     hyphens: auto;
     overflow-wrap: break-word;
     word-break: normal;
+}
+
+h1 {
+    font-weight: bold;
+    color: var(--main-text);
+    text-align: center !important;
 }
 
 @media (max-width: 768px) {
