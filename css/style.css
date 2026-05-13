@@ -161,7 +161,7 @@ main {
 .szoveg {
     padding-bottom: 1rem;
     padding-left: 5dvw;
-    padding-right: 5dvw;
+    padding-right: 3dvw;
     width: 80%;
     color: var(--main-text);
     display: block;
