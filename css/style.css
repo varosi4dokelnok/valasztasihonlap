@@ -363,6 +363,10 @@ h1 {
         font-size: 1.1rem;
         padding-top: 1rem;
     }
+    .vargha, .varosi {
+        width: 90vw;
+        margin-right: 3dvw;
+    }
 
     .szigno-fekete {
         width: 40dvw;
