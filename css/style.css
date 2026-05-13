@@ -203,9 +203,10 @@ footer {
 }
 .szoveg p, .szoveg li, .szoveg div {
     display: block;
+    white-space: normal;
     hyphens: auto;
     overflow-wrap: break-word;
-    word-break: break-word;
+    word-break: normal;
 }
 
 @media (max-width: 768px) {
