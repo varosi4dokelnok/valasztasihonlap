@@ -175,9 +175,10 @@ main {
 }
 .programpont {
     max-width: 90dvw;
-    margin-right: 3dvw;
 }
 .szoveg-p1 {
+    max-width: 90dvw;
+    margin-right: 3dvw;
     padding-left: 5dvw;
     color: var(--main-text);
     display: block;
@@ -192,6 +193,8 @@ main {
 }
 .szoveg-p {
     padding-left: 10dvw;
+    max-width: 90dvw;
+    margin-right: 3dvw;
     color: var(--main-text);
     display: block;
     text-align: justify;
@@ -202,6 +205,7 @@ main {
 }
 .szoveg-p li {
     margin-left: 5dvw;
+    margin-right: 3dvw;
     display: block;
     text-align: justify;
     white-space: normal;
