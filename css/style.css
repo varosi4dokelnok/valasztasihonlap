@@ -201,7 +201,7 @@ footer {
     background-color: var(--btn-bg);
     text-align: center;
 }
-p, li, div {
+.szoveg p, .szoveg li, .szoveg div {
     hyphens: auto;
     overflow-wrap: break-word;
     word-break: break-word;
