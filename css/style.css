@@ -129,6 +129,7 @@ main {
     flex: 1;
     max-width: 90dvw;
     display: block;
+    text-align: justify;
     white-space: normal;
     hyphens: auto;
     overflow-wrap: break-word;
