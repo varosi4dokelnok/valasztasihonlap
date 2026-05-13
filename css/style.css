@@ -202,6 +202,7 @@ footer {
     text-align: center;
 }
 .szoveg p, .szoveg li, .szoveg div {
+    display: block;
     hyphens: auto;
     overflow-wrap: break-word;
     word-break: break-word;
