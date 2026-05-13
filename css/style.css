@@ -45,6 +45,7 @@ body {
     background-color: var(--main-bg);
     display: flex;
     flex-direction: column;
+    width: 100%;
 }
 header {
     max-width: 100%;
@@ -126,7 +127,7 @@ header {
 }
 main {
     flex: 1;
-    width: 90%;
+    max-width: 90dvw;
     text-align: justify;
 }
 .nev {
