@@ -163,6 +163,7 @@ h1 {
     font-weight: bold;
     float: center;
     color: var(--main-text);
+    text-align: center;
 }
 .szoveg {
     padding-bottom: 1rem;
