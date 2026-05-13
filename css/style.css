@@ -154,6 +154,7 @@ main {
 .szoveg {
     padding-bottom: 1rem;
     padding-left: 5dvw;
+    width: 90dvw;
     color: var(--main-text);
     text-align: justify;
 }
