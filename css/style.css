@@ -374,6 +374,9 @@ h1 {
         display: block;
         list-style-option: outside;
     }
+    .szoveg-p ul li {
+        list-style-type: disc;
+    }
     .programpont ul li {
         list-style-type: disc;
     }
