@@ -172,11 +172,10 @@ footer {
     margin-top: auto;
     color: rgb(251, 255, 254);
     padding: 1rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: block;
     height: fit-content;
     background-color: var(--btn-bg);
+    text-align: center;
 }
 
 
@@ -296,7 +295,5 @@ footer {
     footer {
         font-size: 1.2rem;
         padding: 0.8rem;
-        text-align: center;
-        flex-wrap: wrap;
     }
 }
