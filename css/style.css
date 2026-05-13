@@ -128,7 +128,11 @@ header {
 main {
     flex: 1;
     max-width: 90dvw;
-    text-align: justify;
+    display: block;
+    white-space: normal;
+    hyphens: auto;
+    overflow-wrap: break-word;
+    word-break: normal;
 }
 .nev {
     color: var(--main-text);
