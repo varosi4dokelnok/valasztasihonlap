@@ -152,6 +152,7 @@ main {
     padding-bottom: 1rem;
     padding-left: 5dvw;
     color: var(--main-text);
+    text-align: justify;
 }
 .szoveg-p1 {
     padding-left: 5dvw;
