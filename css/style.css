@@ -358,7 +358,8 @@ h1 {
 
     .szoveg {
         width: 90%;
-        margin-left: 5%;
+        margin-left: 5dvw;
+        margin-right: 5dvw;
         font-size: 1.1rem;
         padding-top: 1rem;
     }
