@@ -174,6 +174,12 @@ main {
 .szoveg-p1 {
     padding-left: 5dvw;
     color: var(--main-text);
+    display: block;
+    text-align: justify;
+    white-space: normal;
+    hyphens: auto;
+    overflow-wrap: break-word;
+    word-break: normal;
 }
 .program-a {
     color: var(--link);
@@ -181,9 +187,21 @@ main {
 .szoveg-p {
     padding-left: 10dvw;
     color: var(--main-text);
+    display: block;
+    text-align: justify;
+    white-space: normal;
+    hyphens: auto;
+    overflow-wrap: break-word;
+    word-break: normal;
 }
 .szoveg-p li {
     margin-left: 5dvw;
+    display: block;
+    text-align: justify;
+    white-space: normal;
+    hyphens: auto;
+    overflow-wrap: break-word;
+    word-break: normal;
 }
 .nev, .kapcsolat-nev {
     padding: 0;
