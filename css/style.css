@@ -297,5 +297,6 @@ footer {
         font-size: 1.2rem;
         padding: 0.8rem;
         text-align: center;
+        text-wrap: wrap;
     }
 }
