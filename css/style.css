@@ -160,6 +160,11 @@ main {
     width: 80%;
     color: var(--main-text);
     text-align: justify;
+    display: block;
+    white-space: normal;
+    hyphens: auto;
+    overflow-wrap: break-word;
+    word-break: normal;
 }
 .szoveg-p1 {
     padding-left: 5dvw;
