@@ -385,6 +385,13 @@ h1 {
     .programpont ul li {
         list-style-type: disc;
     }
+    .bemutatkozas {
+        display: block;
+        max-width: 90dvw;
+        margin-left: 5dvw;
+        margin-right: 3dvw;
+        padding: 1dvw;
+    }
     /* FOOTER */
     footer {
         font-size: 1.2rem;
