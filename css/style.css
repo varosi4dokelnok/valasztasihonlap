@@ -363,7 +363,7 @@ h1 {
         font-size: 1.1rem;
         padding-top: 1rem;
     }
-    .vargha, .varosi {
+    .vargha .szoveg, .varosi .szoveg {
         width: 90vw;
         margin-right: 3dvw;
     }
