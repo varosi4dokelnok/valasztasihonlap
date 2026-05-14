@@ -380,9 +380,11 @@ h1 {
         list-style-option: outside;
     }
     .szoveg-p ul li {
+        display: list-item;
         list-style-type: disc;
     }
     .programpont ul li {
+        display: list-item;
         list-style-type: disc;
     }
     .bemutatkozas1 {
