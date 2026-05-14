@@ -388,7 +388,7 @@ h1 {
     .bemutatkozas {
         display: block;
         max-width: 90dvw;
-        margin-left: 3dvw;
+        margin-left:0;
         margin-right: 3dvw;
         padding: 1dvw;
     }
