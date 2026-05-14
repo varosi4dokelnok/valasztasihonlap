@@ -166,13 +166,14 @@ main {
 h1 {
     text-align: center;
     margin-top: 3dvw;
-    margin-bottom: 2dvw;
+    margin-bottom: 3dvw;
     font-weight: 900;
 }
 .alcim {
     width: fit-content;
     padding-bottom: 0.5dvh;
     border-bottom: 0.5dvh solid var(--main-text);
+    margin-top: 1dvh;
     margin-bottom: 1.5dvh;
     font-weight: 900;
 }
