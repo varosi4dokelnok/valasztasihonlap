@@ -147,7 +147,7 @@ main {
     padding-bottom: 2dvh;
     text-align: justify;
     hyphens: auto;
-    overflow-wrap: break-word;
+    overflow-wrap: anywhere;
 }
 .nev {
     color: var(--main-text);
@@ -177,7 +177,7 @@ h1 {
     margin-bottom: 1dvh;
     text-align: justify;
     hyphens: auto;
-    overflow-wrap: break-word;
+    overflow-wrap: anywhere;
 }
 .program-a {
     color: var(--link);
@@ -281,7 +281,6 @@ footer {
     .szigno-feher {
         width: 40dvw;
     }
-
 
     .programpont ul {
         display: block;
