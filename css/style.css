@@ -172,6 +172,7 @@ h1 {
     width: fit-content;
     padding-bottom: 0.5dvh;
     border-bottom: 0.5dvh solid var(--main-text);
+    margin-bottom: 1.5dvh;
 }
 .programpont {
     margin-bottom: 1dvh;
