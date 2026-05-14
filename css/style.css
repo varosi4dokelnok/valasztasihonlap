@@ -386,6 +386,7 @@ h1 {
         list-style-type: disc;
     }
     .bemutatkozas1 {
+        width: 100%;
         display: block;
         margin-left: 0;
         padding-left: 3dvw;
@@ -395,7 +396,7 @@ h1 {
         max-width: 90dvw;
         margin-left:0;
         margin-right: 3dvw;
-        padding: 1dvw;
+        padding-right: 1dvw;
     }
     /* FOOTER */
     footer {
