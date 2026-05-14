@@ -381,21 +381,25 @@ h1 {
     }
     .szoveg-p ul li {
         display: list-item;
+        list-style: normal;
         list-style-type: disc;
     }
     .programpont ul li {
         display: list-item;
+        list-style: normal;
         list-style-type: disc;
     }
     .bemutatkozas1 {
         width: 100%;
         display: block;
         margin-left: 0;
+        margin-right: 0;
+        padding-right: 0;
         padding-left: 3dvw;
     }
     .bemutatkozas {
         display: block;
-        margin-left:0;
+        margin-left: 0;
         margin-right: 3dvw;
         padding-right: 1dvw;
     }
