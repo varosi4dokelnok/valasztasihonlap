@@ -281,7 +281,9 @@ footer {
     .szigno-feher {
         width: 40dvw;
     }
-
+    .bemutatkozas-p, .programpont {
+        text-align: left;
+    }
     .programpont ul {
         display: block;
     }
