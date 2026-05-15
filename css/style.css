@@ -147,6 +147,7 @@ main {
     padding-bottom: 2dvh;
     text-align: justify;
     hyphens: auto;
+    -webkit-hyphens: auto;
     overflow-wrap: anywhere;
 }
 .nev {
@@ -181,6 +182,7 @@ h1 {
     margin-bottom: 1dvh;
     text-align: justify;
     hyphens: auto;
+    -webkit-hyphens: auto;
     overflow-wrap: anywhere;
 }
 .program-a {
