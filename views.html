@@ -1,16 +1,24 @@
 <h2>Oldalmegtekintések valós időben</h2>
-<div id="counter">Betöltés...</div>
+<div id="counter" style="font-size: 24px; font-weight: bold;">Betöltés...</div>
 
 <script>
-    function frissit() {
-      fetch("https://api.countapi.xyz/get/varosi-kampany26.hu/visits")
-      .then(r => r.json())
-      .then(d => {
-        document.getElementById("counter").innerText =
-          "Megtekintések: " + d.value;
-      });
-    }
+// Ez a függvény lekéri a legfrissebb nézettséget
+function frissit() {
+  fetch("https://hits.sh/varosi-kampany26.hu.json")
+    .then(r => r.json())
+    .then(d => {
+      document.getElementById("counter").innerText =
+        "Megtekintések: " + d.hits;
+    })
+    .catch(err => {
+      document.getElementById("counter").innerText =
+        "Hiba történt: " + err;
+    });
+}
 
-    frissit();              // első lekérés
-    setInterval(frissit, 1000);   // frissítés 1 másodpercenként
+// Azonnal lefut egyszer
+frissit();
+
+// Majd 2 másodpercenként újra
+setInterval(frissit, 2000);
 </script>
