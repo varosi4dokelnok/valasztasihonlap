@@ -6,6 +6,8 @@
   <body>
     <h2>Oldalmegtekintések</h2>
 
-    <img src="https://hits.sh/github.com/varosikampany.svg?style=flat&label=Megtekintések">
   </body>
+  <script>
+    fetch("https://api.countapi.xyz/get/varosi_kampany/visits").then(r => r.json()).then(d => console.log(d.value));
+  </script>
 </html>
