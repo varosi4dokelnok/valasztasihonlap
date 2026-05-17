@@ -1,0 +1,16 @@
+<h2>Oldalmegtekintések valós időben</h2>
+<div id="counter">Betöltés...</div>
+
+<script>
+    function frissit() {
+      fetch("https://api.countapi.xyz/get/varosi-kampany26.hu/visits")
+      .then(r => r.json())
+      .then(d => {
+        document.getElementById("counter").innerText =
+          "Megtekintések: " + d.value;
+      });
+    }
+
+    frissit();              // első lekérés
+    setInterval(frissit, 1000);   // frissítés 1 másodpercenként
+</script>
